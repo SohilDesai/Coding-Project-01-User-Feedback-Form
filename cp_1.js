@@ -51,3 +51,10 @@ nameInput.value = "";
 emailInput.value = "";
 commentsInput.value = "";
 charCount.textContent = "Characters: 0";
+feedbackForm.addEventListener("click", function (event) {
+    event.stopPropagation();
+});
+
+document.body.addEventListener("click", function () {
+    tooltip.style.display = "none";
+});
