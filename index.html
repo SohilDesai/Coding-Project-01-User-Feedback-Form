@@ -6,6 +6,50 @@
 </head>
 <body>
 
+    <div id="page-container">
+
+        <h1>User Feedback Form</h1>
+
+        <form id="feedbackForm">
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email">
+
+            <label for="comments">Comments</label>
+            <textarea
+                id="comments"
+                rows="5"
+                placeholder="Enter your comments"></textarea>
+
+            <p id="charCount">
+                Characters: 0
+            </p>
+
+            <p id="validationMessage"></p>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+        <div id="tooltip"></div>
+
+        <h2>Submitted Feedback</h2>
+
+        <div id="feedback-display"></div>
+
+    </div>
+
     <script src="cp_1.js"></script>
 
 </body>
