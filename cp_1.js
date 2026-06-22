@@ -10,3 +10,15 @@ let tooltip = document.getElementById("tooltip");
 commentsInput.addEventListener("input", function () {
     charCount.textContent = "Characters: " + commentsInput.value.length;
 });
+feedbackForm.addEventListener("mouseover", function (event) {
+    if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+        tooltip.style.display = "block";
+        tooltip.textContent = "Please complete this field.";
+    }
+});
+
+feedbackForm.addEventListener("mouseout", function (event) {
+    if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+        tooltip.style.display = "none";
+    }
+});
