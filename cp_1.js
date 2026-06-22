@@ -1,1 +1,12 @@
 console.log("Feedback form loaded");
+let feedbackForm = document.getElementById("feedbackForm");
+let nameInput = document.getElementById("name");
+let emailInput = document.getElementById("email");
+let commentsInput = document.getElementById("comments");
+let charCount = document.getElementById("charCount");
+let validationMessage = document.getElementById("validationMessage");
+let feedbackDisplay = document.getElementById("feedback-display");
+let tooltip = document.getElementById("tooltip");
+commentsInput.addEventListener("input", function () {
+    charCount.textContent = "Characters: " + commentsInput.value.length;
+});
