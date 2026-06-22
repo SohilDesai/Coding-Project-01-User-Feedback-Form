@@ -36,3 +36,18 @@ feedbackForm.addEventListener("submit", function (event) {
 
     validationMessage.textContent = "";
 });
+let feedbackEntry = document.createElement("div");
+feedbackEntry.className = "feedback-entry";
+
+feedbackEntry.innerHTML = `
+    <h3>${nameInput.value}</h3>
+    <p><strong>Email:</strong> ${emailInput.value}</p>
+    <p><strong>Comments:</strong> ${commentsInput.value}</p>
+`;
+
+feedbackDisplay.appendChild(feedbackEntry);
+
+nameInput.value = "";
+emailInput.value = "";
+commentsInput.value = "";
+charCount.textContent = "Characters: 0";
