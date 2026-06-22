@@ -37,3 +37,32 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#validationMessage {
+    color: red;
+    font-weight: bold;
+}
+
+#charCount {
+    font-size: 14px;
+}
+
+#tooltip {
+    display: none;
+    background-color: #1f2933;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.feedback-entry {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+}
