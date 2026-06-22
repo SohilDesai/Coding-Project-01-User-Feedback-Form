@@ -22,3 +22,17 @@ feedbackForm.addEventListener("mouseout", function (event) {
         tooltip.style.display = "none";
     }
 });
+feedbackForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (
+        nameInput.value === "" ||
+        emailInput.value === "" ||
+        commentsInput.value === ""
+    ) {
+        validationMessage.textContent = "Please fill out all fields.";
+        return;
+    }
+
+    validationMessage.textContent = "";
+});
